@@ -45,6 +45,7 @@
   ],
   "files": [
     "dist/*",
-    "src/ajax.js"
+    "src/ajax.js",
+    "./README.md"
   ]
 }
