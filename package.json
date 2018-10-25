@@ -1,7 +1,7 @@
 {
   "name": "ajax-plus",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,8 +9,10 @@
     "build-bundle": "vue-cli-service build --target lib --name ajaxPlus ./src/ajax.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.17"
   },
+  "main": "./dist/ajaxPlus.common.js",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
@@ -41,5 +43,9 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
+  ],
+  "files": [
+    "dist/*",
+    "src/ajax.js"
   ]
 }
